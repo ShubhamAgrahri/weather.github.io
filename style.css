@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.searchBox{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+    flex-wrap: wrap;
+    
+}
+#cityName{
+   padding: 10px;
+   width: 70vw;
+   outline: none;
+   border-radius: 10px;
+   font-size: 1.3rem;
+   align-self: center;
+
+   
+   
+}
+#showBtn{
+    box-sizing: border-box;
+    width:15vw;
+    height: 3.02rem;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    align-self: center;
+    font-size: 1.3rem;
+}
+
+
+.weatherBox{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.weatherBox div p {
+    font-size: 4rem;
+}
+.cloudType{
+    text-align: center;
+    font-size: 2.3rem;
+    
+}
+.temperature{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 900px) {
+   #cityName{
+    width: 35vw;
+   }
+  
+  }
+  @media screen and (max-width: 920px) {
+    .weatherBox{
+     flex-direction: column;
+   
+   }
+   .temperature{
+    flex-direction: column;
+    justify-content: space-between;
+}
+}
+ 
